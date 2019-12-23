@@ -275,7 +275,7 @@ static void StartVideoThread()
   if(videothread == LWP_THREAD_NULL)
   {
     quit_flip_thread = 0;
-    LWP_CreateThread (&videothread, flip_thread, NULL, NULL, 0, 68);
+    LWP_CreateThread (&videothread, flip_thread, NULL, NULL, 32*1024, 68);
   }
 }
 
